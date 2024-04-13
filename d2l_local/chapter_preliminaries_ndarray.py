@@ -1,3 +1,16 @@
 import torch
+
 x = torch.arange(12)
 print(x)
+print(x.shape)
+print(x.numel())
+X = x.reshape(3, 4)
+print(X)
+X_same = x.reshape(-1, 4)
+print(X_same)
+X_same_too = x.reshape(3, -1)
+print(X_same_too)
+print(torch.zeros((2, 3, 4)))
+print(torch.ones((2, 3, 4)))
+print(torch.randn(3, 4))
+print(torch.tensor([[2, 1, 4, 3], [1, 2, 3, 4], [4, 3, 2, 1]]))
